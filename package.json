@@ -1,0 +1,27 @@
+{
+  "name": "iskidnumber",
+  "version": "1.0.0",
+  "description": "Validates a norwegian Kid number for bank payments",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trondstromlie/iskidnumber.git"
+  },
+  "keywords": [
+    "KID",
+    "banking",
+    "payment"
+  ],
+  "author": "Trond Strøm Lie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trondstromlie/iskidnumber/issues"
+  },
+  "homepage": "https://github.com/trondstromlie/iskidnumber#readme",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}

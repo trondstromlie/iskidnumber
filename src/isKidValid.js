@@ -10,13 +10,13 @@ const { FACTORS } = require('./constants')
 let isKidValid = ( kidNumber ) => {
     if (typeof kidNumber != 'string') {
         throw new Error('Parameter is not a string!');
-    };
+    }
 
     if(kidNumber === "" || !/^[0-9]{1,25}$/g.test(kidNumber) ) {
         return false
-    };
+    }
 
-    let sum = 0
+    let sum = 0;
     kidNumber.split("").reverse().slice(1, kidNumber.length).forEach((base, index) => {
         if (parseInt(base) * FACTORS[index] > 9 ) {
             sum = sum + ((parseInt(base) * FACTORS[index]) -9)
@@ -25,10 +25,9 @@ let isKidValid = ( kidNumber ) => {
         }
     });
 
-    let checkSum = 10 - (sum % 10)
-    let isValid = checkSum === parseInt(kidNumber.split("").slice(-1));
+    let checkSum = 10 - (sum % 10);
 
-    return isValid
-}
+    return checkSum === parseInt(kidNumber.split("").slice(-1));
+};
 
 module.exports = isKidValid
