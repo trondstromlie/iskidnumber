@@ -30,4 +30,4 @@ let isKidValid = ( kidNumber ) => {
     return checkSum === parseInt(kidNumber.split("").slice(-1));
 };
 
-module.exports = isKidValid
+module.exports = { isKidValid }
