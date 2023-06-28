@@ -1,3 +1,10 @@
-## iskidnumber
-a function to validate a Norwegian KID number using the Modulus11 algorithm <br>
-[See it in action here](https://jsfiddle.net/trondstromlie/ex0utpcm/117/)
+## validateKidNumber
+A function to validate a Norwegian KID number using the Modulus11 algorithm <br>
+[See it in action here](https://jsfiddle.net/trondstromlie/ex0utpcm)
+
+To install `npm install validateKidNumber`
+
+to use: <br>
+`const { isKidValid } = require("validateKidNumber")` <br>
+`isKidValid(" 0114641202")`
+

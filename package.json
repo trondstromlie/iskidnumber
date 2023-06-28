@@ -1,5 +1,5 @@
 {
-  "name": "is-kid-number",
+  "name": "validateKidNumber",
   "version": "1.0.0",
   "description": "Validates a norwegian Kid number for bank payments",
   "main": "dist/isKidValid.cjs.js",
